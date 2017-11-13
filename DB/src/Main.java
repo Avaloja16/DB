@@ -17,9 +17,9 @@ public class Main {
 		taulu();
 		paakayttaja();
 		kirjautuminen();
-		
 	}//main
 	
+
 	
 	/**
 	 * Tämä metodi luo tietokannan jos sitä ei ole jo olemassa. 
@@ -176,6 +176,7 @@ public class Main {
 			vaihdaSalasana(knimi, taso);
 		} else if (valinta == 4) {
 			System.out.println("Olet nyt kirjautunut ulos järjestelmästä " + knimi + ".");
+			lukija.nextLine();
 			kirjautuminen();
 		} else {
 			System.out.println("Virheellinen valinta");
